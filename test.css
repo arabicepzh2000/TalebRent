@@ -1,0 +1,173 @@
+body{
+  background-color: rgb(230, 240, 255);
+}
+.container{
+  border-radius: 30px;
+  margin: 1px;
+  height: 150px;
+  width: 99%;
+  background-color: rgb(37, 99, 235);
+}
+.h1{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.search{
+margin-left:35%;
+}
+.search input{
+  background-color: rgba(210, 210, 210, 0.934);
+  border-radius: 30px;
+  border: 0px;
+  margin-top: 45px;
+  width: 450px;
+  height: 40px;
+  text-align: center;
+}
+.back_btn button{
+  width: 150px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  border: 0px;
+  background-color: #2563eb;
+  color: #f8f8f8;
+  font-weight: bold;
+  transition: 0.5s;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.331);
+  float: left;
+}
+.back_btn button:hover{
+  background-color: #f8f8f8;
+  color:#2563eb;
+}
+
+.buttons{
+  margin-left: 40%;
+  background-color: rgb(37, 99, 235);
+  display: flex;
+}
+.my_items{
+  height: 50px;
+  width: 150px;
+  font-size: 1.5rem;
+  text-align: right;
+  background-color: white;
+  border: 0px;
+  margin-top: 80px;
+  box-shadow: 5px 0px 10px;
+  transition: 0.5s;
+}
+.my_items:hover{
+width:160px;
+}
+.listitem i{
+  display: flex;
+  float: left;
+}
+.list_item{
+  height: 50px;
+  width: 150px;
+  font-size: 28px;
+  text-align: right;
+  background-color: white;
+  border: 0px;
+  margin-top: 80px;
+  margin-left:4px ;
+  box-shadow: 5px 0px 10px;
+}
+.listitem i{
+  display: flex;
+  float: left;
+}
+.aboutus{
+  height: 50px;
+  width: 150px;
+  font-size: 25px;
+  text-align: right;
+  border: 0px;
+  margin-top: 80px;
+  margin-left:4px ;
+  box-shadow: 5px 0px 10px;
+}
+.listitem i{
+  display: flex;
+  float: left;
+}
+
+
+.contain_det {
+  display: flex; /* Side by side layout for desktop */
+  gap: 30px;
+  padding: 30px;
+  background-color: rgb(244, 243, 243);
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.281);
+  max-width: 1000px;
+  margin-left: 15%;
+  margin-top: 20px;
+}
+
+.img_container {
+  width: 50%;
+  height: 400px;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scroll */
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  padding: 5px;
+}
+
+/* Style for each image in the detail view */
+.p_img {
+  flex: 0 0 100%; /* Each image takes full width of container */
+  height: 100%;
+  object-fit: contain; /* Shows full image without cropping */
+  scroll-snap-align: start;
+  border-radius: 15px;
+}
+.info_section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Hide scrollbar but keep functionality */
+.img_container::-webkit-scrollbar { height: 6px; }
+.img_container::-webkit-scrollbar-thumb { background: #2563eb; border-radius: 10px; }
+
+/* Existing text styles */
+.user_name h3 { color: #888; text-transform: uppercase; font-size: 1.25rem; margin-bottom: 5px; }
+.product_name h2 { margin: 0; font-size: 3rem; text-transform: uppercase; }
+.status { color: #aaa;font-size: 1.25rem; }
+.description h5 { color: #555; font-size: 1.2rem; line-height: 1.5; font-weight: 400; margin-bottom: 20px; }
+.price, .place { display: flex; align-items: center; gap: 10px; margin-bottom: 10px;font-size: 1.2rem; }
+.price h3, .place h3 { margin: 0; font-weight: 800; }
+.request_btn{
+  margin-left: 55%;
+}
+.request_btn button{
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #2563eb;
+  color: #f8f8f8;
+  border: 0PX;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.308);
+  transition: 0.5s;
+}
+.request_btn button:hover{
+  background-color: #f8f8f8;
+  color: #2563eb;
+}

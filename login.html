@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://kit.fontawesome.com/9f1604d277.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&display=swap');
+    </style>
+<body>
+    <form id="loginForm">
+    <div id="container">
+        <div class="h1">
+            <h1>Log-in</h1>
+        </div>
+        <div class="email">
+            <label for="email">E-mail*</label><br>
+            <input type="email" name="email" id="email" required>
+        </div>
+       <div class="password">
+        <label for="password">password*</label><br>
+        <input type="password" name="password" id="password" required>
+       </div>
+       <div class="forget">
+        <a href="">forget pasword? ></a>
+       </div>
+       <div class="Remember">
+        <input type="checkbox" name="" id="rememberMe"required>
+        <label for="checkbox">Remember Me</label>
+       </div>
+        <div class="signup">
+            <p>Don't have an account <a href="signup.html">Sign Up></a></p>
+        </div>
+        <div class="btn">
+            <button href="home_page.html">Log in</button>
+        </div>  
+    </div>
+</form>
+<script type="module" src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalebRent - Marketplace</title>
+    <link rel="stylesheet" href="home_page.css">
+    <script src="https://kit.fontawesome.com/9f1604d277.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=notifications" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=category" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="h1">
+                <h1 onclick="window.location.reload()" style="cursor:pointer">TalebRent</h1>
+            </div>
+            
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="SEARCH">
+            </div>
+
+            <div class="buttons">
+                <button onclick="window.location.href='my_items.html'" class="my_items">my items</button>
+                <button onclick="window.location.href='list_item.html'"class="list_item"><i class="fa-solid fa-cart-plus" style="color: #007bff;"></i> listitem</button>
+                <div class="categories"> 
+                    <i class="fa-solid fa-layer-group" style="color: #007bff;"></i>
+                    <select id="categorySelect"> <option value="">All Categories </option>
+                        <option value="Books">Books</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Study Materials">Study Materials</option>
+                        <option value="Lab Equipment">Lab Equipment</option>
+                        <option value="Drawing & Architecture Tools">Drawing & Architecture Tools</option>
+                        <option value="Calculators">Calculators</option>
+                        <option value="Furniture">Furniture</option>
+                        <option value="Accommodation">Accommodation</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <button class="aboutus"><i class="fa-solid fa-circle-info" style="color: #007bff;"></i>about us</button>
+                <div class="notification"> <i class="fa-solid fa-bell" style="color: #007bff;"></i>
+                    <select name="notification" id="nav-select">
+                    <option value="notifications" >Go to... </option>
+                    <option value="m_rent.html" onclick="window.location.href='m_rent.html'">rent_request</option>
+                    <option value="contact.html" onclick="window.location.href='contact.html'">message</option>
+                    <option value="m_cont.html">contracts</option>
+                    <option value="m_pay.html">payment</option>
+                </select>   </div>
+                          
+            </div>
+            
+        </div>
+    </header>
+
+   
+
+    <div class="filter">
+        <div class="wilaya">
+            <select id="wilayaSelect">
+                <option value="">all wilaya</option>
+                 <option value="Adrar">01 Adrar</option>
+    <option value="Chlef">02 Chlef</option>
+    <option value="Laghouat">03 Laghouat</option>
+    <option value="Oum El Bouaghi">04 Oum El Bouaghi</option>
+    <option value="Batna">05 Batna</option>
+    <option value="Béjaïa">06 Béjaïa</option>
+    <option value="Biskra">07 Biskra</option>
+    <option value="Béchar">08 Béchar</option>
+    <option value="Blida">09 Blida</option>
+    <option value="Bouira">10 Bouira</option>
+    <option value="Tamanrasset">11 Tamanrasset</option>
+    <option value="Tébessa">12 Tébessa</option>
+    <option value="Tlemcen">13 Tlemcen</option>
+    <option value="Tiaret">14 Tiaret</option>
+    <option value="Tizi Ouzou">15 Tizi Ouzou</option>
+    <option value="Algiers">16 Algiers</option>
+    <option value="Djelfa">17 Djelfa</option>
+    <option value="Jijel">18 Jijel</option>
+    <option value="Sétif">19 Sétif</option>
+    <option value="Saïda">20 Saïda</option>
+    <option value="Skikda">21 Skikda</option>
+    <option value="Sidi Bel Abbès">22 Sidi Bel Abbès</option>
+    <option value="Annaba">23 Annaba</option>
+    <option value="Guelma">24 Guelma</option>
+    <option value="Constantine">25 Constantine</option>
+    <option value="Médéa">26 Médéa</option>
+    <option value="Mostaganem">27 Mostaganem</option>
+    <option value="M'Sila">28 M'Sila</option>
+    <option value="Mascara">29 Mascara</option>
+    <option value="Ouargla">30 Ouargla</option>
+    <option value="Oran">31 Oran</option>
+    <option value="El Bayadh">32 El Bayadh</option>
+    <option value="Illizi">33 Illizi</option>
+    <option value="Bordj Bou Arréridj">34 Bordj Bou Arréridj</option>
+    <option value="Boumerdès">35 Boumerdès</option>
+    <option value="El Tarf">36 El Tarf</option>
+    <option value="Tindouf">37 Tindouf</option>
+    <option value="Tissemsilt">38 Tissemsilt</option>
+    <option value="El Oued">39 El Oued</option>
+    <option value="Khenchela">40 Khenchela</option>
+    <option value="Souk Ahras">41 Souk Ahras</option>
+    <option value="Tipaza">42 Tipaza</option>
+    <option value="Mila">43 Mila</option>
+    <option value="Aïn Defla">44 Aïn Defla</option>
+    <option value="Naâma">45 Naâma</option>
+    <option value="Aïn Témouchent">46 Aïn Témouchent</option>
+    <option value="Ghardaïa">47 Ghardaïa</option>
+    <option value="Relizane">48 Relizane</option>
+    <option value="Timimoun">49 Timimoun</option>
+    <option value="Bordj Badji Mokhtar">50 Bordj Badji Mokhtar</option>
+    <option value="Ouled Djellal">51 Ouled Djellal</option>
+    <option value="Béni Abbès">52 Béni Abbès</option>
+    <option value="In Salah">53 In Salah</option>
+    <option value="In Guezzam">54 In Guezzam</option>
+    <option value="Touggourt">55 Touggourt</option>
+    <option value="Djanet">56 Djanet</option>
+    <option value="El M'Ghair">57 El M'Ghair</option>
+    <option value="El Meniaa">58 El Meniaa</option>
+                </select>
+            <select id="uniSelect" disabled>
+                <option value="">-- Choose Wilaya --</option>
+            </select>
+        </div>
+        <div class="cost">
+            <select id="costSelect"> <option value="">Sort By</option>
+                <option value="low-high">Price: Low to High</option>
+                <option value="high-low">Price: High to Low</option>
+            </select>
+        </div>
+        <div class="available">
+            <select id="availSelect"> <option value="">all status</option>
+                <option value="Available">Available</option>
+                <option value="Not Available">Not Available</option>
+            </select>
+        </div>
+        <div class="academic">
+            <select id="specialization">
+                <option value="">All Specializations</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Medicine">Medicine</option>
+                <option value="Pharmacy">Pharmacy</option>
+                <option value="Architecture">Architecture</option>
+                <option value="Business">Business</option>
+                <option value="Law">Law</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Physics">Physics</option>
+                <option value="Biology">Biology</option>
+                <option value="Languages">Languages</option>
+                <option value="Economics">Economics</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="listingsContainer" class="listings-grid"></div>
+
+<template id="productCardTemplate">
+    <div class="product_card">
+        <div class="card_img_wrapper">
+            <img class="p-img" src="" alt="">
+        </div>
+        <div class="card_content">
+            <div class="title_row">
+                <h2 class="p-title"></h2>
+                <h2 class="p-status"></h2>
+            </div>
+            <p class="p-location"></p>
+            <p class="p-availability">
+                <i class="fa-solid fa-circle-check"></i> 
+                <span class="p-avail-text"></span>
+            </p>
+            <div class="card_footer">
+                <span class="p-price-row">
+                    <strong class="p-price"></strong>DA
+                    <strong class="p-aday"></strong>
+                </span>
+            </div>
+        </div>
+    </div>
+</template>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="home_page.js"></script>
+</body>
+</html>

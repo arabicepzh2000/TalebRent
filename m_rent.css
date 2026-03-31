@@ -1,0 +1,214 @@
+body{
+    background-color: rgb(230, 240, 255);
+}
+.container{
+    border-radius: 30px;
+    margin: 1px;
+    height: 150px;
+    background-color: rgb(37, 99, 235);
+}
+.h1{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.search{
+margin-left:35%;
+}
+.search input{
+    background-color: rgba(210, 210, 210, 0.934);
+    border-radius: 30px;
+    border: 0px;
+    margin-top: 45px;
+    width: 450px;
+    height: 40px;
+    text-align: center;
+}
+.buttons{
+    justify-content: center;
+align-items: center;
+    background-color: rgb(37, 99, 235);
+    display: flex;
+    margin-top: 30px;
+}
+.my_items{
+    height: 50px;
+    width: 150px;
+    font-size: 28px;
+    text-align: right;
+    background-color: white;
+    border: 0px;
+    margin: 2.5px;
+    box-shadow: 5px 0px 10px;
+}
+.listitem i{
+    display: flex;
+    float: left;
+}
+.list_item{
+    height: 50px;
+    width: 150px;
+    font-size: 28px;
+    text-align: right;
+    background-color: white;
+    border: 0px;
+    margin: 2.5px;
+    box-shadow: 5px 0px 10px;
+}
+.listitem i{
+    display: flex;
+    float: left;
+}
+.categories span{
+    display: flex;
+    float: left;
+}
+.categories span{
+    display: flex;
+    float: left;
+}
+.categories select{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    text-align: right;
+    border: 0px;
+    margin: 2.5px;
+    box-shadow: 5px 0px 10px;
+}
+.listitem i{
+    display: flex;
+    float: left;
+}
+.listitem i{
+    display: flex;
+    float: left;
+}
+.aboutus{
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    text-align: center;
+    border: 0px;
+    margin: 2.5px;
+    box-shadow: 5px 0px 10px;
+}
+.notification{
+    background-color: #ffffff;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    border: 0px;
+    cursor: pointer;
+    margin: 2.5px;
+    box-shadow: 5px 0px 10px;
+    transition: 0.5s;
+}
+.notification:hover{
+    width: 150px;
+}
+.notification select{
+    font-size: 1.5rem;
+    width: 20px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.notification select:hover{
+ width: 100px;
+}
+.notification i{
+    float: left;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.listitem i{
+    display: flex;
+    float: left;
+}
+.title{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.requests_list{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin-top: 20px;
+    gap: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.361);
+    -webkit-overflow-scrolling: touch;
+    background-color: rgb(255, 255, 255);
+    width: 85%;
+    height: 500px;
+    padding: 30px;
+    margin-left: 100px;
+}
+.requests_list::-webkit-scrollbar {
+    width: 10px;
+}
+.requests_list::-webkit-scrollbar-thumb {
+    background-color: #269dff;
+    border-radius: 10px;
+}
+.request_card{
+    background-color: rgb(203, 227, 255);
+    border-radius: 30px;
+    text-align: left;
+    width: 80%;
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.708);
+}
+.request_actions{
+    margin-left: 72%;
+}
+.pay_card{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #299fff;
+}
+.message_btn{
+    width: 100px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    background-color: #006aff;
+    color: white;
+    transition: 0.5s;
+}
+.message_btn:hover{
+    width: 120px;
+    background-color: white;
+    color: #006aff;
+}
+.decline_btn{
+    width: 100px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff2600;
+    color: white;
+    transition: 0.5s;
+}
+.decline_btn:hover{
+    width: 120px;
+    background-color: white;
+    color: #ff1500;
+}

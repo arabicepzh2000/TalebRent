@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalebRent - My Inbox</title>
+    <script src="https://kit.fontawesome.com/9f1604d277.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="h1">
+                <h1 onclick="window.location.reload()" style="cursor:pointer">TalebRent</h1>
+            </div>
+            
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="SEARCH">
+            </div>
+
+            <div class="buttons">
+                <button onclick="window.location.href='my_items.html'" class="my_items">my items</button>
+                <button onclick="window.location.href='list_item.html'"class="list_item"><i class="fa-solid fa-cart-plus" style="color: #007bff;"></i> listitem</button>
+                <div class="categories"> 
+                    <i class="fa-solid fa-layer-group" style="color: #007bff;"></i>
+                    <select id="categorySelect"> <option value="">All Categories </option>
+                        <option value="Books">Books</option>
+                        <option value="Electronics">Electronics</option>
+                        <option value="Study Materials">Study Materials</option>
+                        <option value="Lab Equipment">Lab Equipment</option>
+                        <option value="Drawing & Architecture Tools">Drawing & Architecture Tools</option>
+                        <option value="Calculators">Calculators</option>
+                        <option value="Furniture">Furniture</option>
+                        <option value="Accommodation">Accommodation</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <button class="aboutus"><i class="fa-solid fa-circle-info" style="color: #007bff;"></i>about us</button>
+                <div class="notification"> <i class="fa-solid fa-bell" style="color: #007bff;"></i>
+                    <select name="notification" id="nav-select">
+                    <option value="notifications" >Go to... </option>
+                    <option value="m_rent.html" onclick="window.location.href='m_rent.html'">rent_request</option>
+                    <option value="contact.html" onclick="window.location.href='contact.html'">message</option>
+                    <option value="m_cont.html">contracts</option>
+                    <option value="m_pay.html">payment</option>
+                </select>   </div>
+                          
+            </div>
+            
+        </div>
+    </header>
+
+
+
+
+<div class="message_container">
+    <aside class="contacts_sidebar">
+        <div class="sidebar_header">
+            <h3>My Chats</h3>
+        </div>
+        <div id="contact_list_container" class="contact_list_container">
+            <h3 class="contact_name"></h3>
+            <p class="loading">Loading contacts...</p>
+        </div>
+    </aside>
+
+
+    <main class="chat_window">
+        <div id="active_chat_header" class="chat_header">
+            <div class="user_info">
+                <h2 id="target_name">Select a contact</h2>
+                <span id="target_item"></span>
+            </div>
+            <div id="payment_badge" class="badge"></div>
+        </div>
+
+        <div id="messages_display" class="messages_area">
+            <p class="empty_state">Select a student from the left to start texting.</p>
+        </div>
+
+        <form id="chat_form" class="chat_input_area">
+            <input type="text" id="message_input" placeholder="Type a message..." required autocomplete="off">
+            <button type="submit" id="send_btn">Send</button>
+            <form id="chat_form" class="chat_input_area">
+                <button type="button" id="request_btn" title="Create Rent Request">+</button>
+                
+                <input type="text" id="message_input" placeholder="Type a message..." required autocomplete="off">
+                <button type="submit" id="send_btn">Send</button>
+            </form>
+            
+            <div id="request_modal" class="modal_overlay" style="display:none;">
+                <div class="modal_content">
+                    <h3>Create Rent Proposal</h3>
+                    <label>Start Date</label>
+                    <input type="date" id="start_date" required>
+                    
+                    <label>End Date</label>
+                    <input type="date" id="end_date" required>
+                    
+                    <label>Payment Method</label>
+                    <select id="payment_method">
+                        <option value="Cash">Cash on Delivery</option>
+                        <option value="Baridimob">Baridimob</option>
+                        <option value="Hand-to-Hand">Hand-to-Hand Exchange</option>
+                    </select>
+                    
+                    <div class="modal_actions">
+                        <button type="button" id="close_modal">Cancel</button>
+                        <button type="button" id="submit_request">Send Proposal</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+
+</div>
+    
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

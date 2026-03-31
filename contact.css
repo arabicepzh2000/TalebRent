@@ -1,0 +1,303 @@
+body{
+    background-color: rgb(230, 240, 255);
+}
+.container{
+    border-radius: 30px;
+    margin: 1px;
+    height: 150px;
+    background-color: rgb(37, 99, 235);
+}
+.h1{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.search{
+margin-left:35%;
+}
+.search input{
+    background-color: rgba(210, 210, 210, 0.934);
+    border-radius: 30px;
+    border: 0px;
+    margin-top: 45px;
+    width: 450px;
+    height: 40px;
+    text-align: center;
+}
+.buttons{
+    justify-content: center;
+align-items: center;
+    background-color: rgb(37, 99, 235);
+    display: flex;
+    margin-top: 30px;
+}
+.my_items{
+    height: 50px;
+    width: 150px;
+    font-size: 28px;
+    text-align: right;
+    background-color: white;
+    border: 0px;
+    margin: 2.5px;
+    box-shadow: 5px 0px 10px;
+}
+.listitem i{
+    display: flex;
+    float: left;
+}
+.list_item{
+    height: 50px;
+    width: 150px;
+    font-size: 28px;
+    text-align: right;
+    background-color: white;
+    border: 0px;
+    margin: 2.5px;
+    box-shadow: 5px 0px 10px;
+}
+.listitem i{
+    display: flex;
+    float: left;
+}
+.categories span{
+    display: flex;
+    float: left;
+}
+.categories span{
+    display: flex;
+    float: left;
+}
+.categories select{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    text-align: right;
+    border: 0px;
+    margin: 2.5px;
+    box-shadow: 5px 0px 10px;
+}
+.listitem i{
+    display: flex;
+    float: left;
+}
+.listitem i{
+    display: flex;
+    float: left;
+}
+.aboutus{
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    text-align: center;
+    border: 0px;
+    margin: 2.5px;
+    box-shadow: 5px 0px 10px;
+}
+.notification{
+    background-color: #ffffff;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    border: 0px;
+    cursor: pointer;
+    margin: 2.5px;
+    box-shadow: 5px 0px 10px;
+    transition: 0.5s;
+}
+.notification:hover{
+    width: 150px;
+}
+.notification select{
+    font-size: 1.5rem;
+    width: 20px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.notification select:hover{
+ width: 100px;
+}
+.notification i{
+    float: left;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.listitem i{
+    display: flex;
+    float: left;
+}
+.message_container{
+    display: flex;
+    background-color: rgb(252, 254, 255);
+    height: 500px;
+    margin-top: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.317);
+}
+.contacts_sidebar{
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden;
+    background-color: rgb(5, 122, 176);
+    width: 400px;
+    height: 100%;
+    padding-left: 30px;
+    border-radius: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.062);
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.074);
+}
+.contacts_sidebar::-webkit-scrollbar{
+background-color: transparent;
+}
+.sidebar_header{
+    margin-left: 10%;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chat_window{
+    background-color: rgb(196, 179, 158);
+    margin-left: 20px;
+    width: 75%;
+    border-radius: 30px;
+    box-shadow:5px 0px 10px rgba(0, 0, 0, 0.411) ;
+}
+.chat_input_area{
+    margin-top: 10px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: red;
+}
+.chat_input_area input{
+    margin-left: 30%;
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+    padding-left:10px;
+    padding-right: 10px;
+}
+.chat_input_area button{
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.user_info{
+    background-color: rgba(28, 97, 226, 0.497);
+    color: white;
+    border-radius: 30px;
+    height: 50px;
+    padding-left: 30px;
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.42);
+}
+.messages_area{
+    height: 310px;
+    border-radius: 30px;
+
+}
+
+/* Sidebar scrolling fix */
+#contact_list_container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* This creates the space between individual containers */
+}
+
+/* Individual Card Design */
+.contact-card {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(255, 255, 255);
+    height: 80px;
+    color: rgb(62, 139, 255);
+    border-radius: 30px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-card:hover {
+    background-color: rgb(114, 189, 255);
+    color: white;
+}
+
+.contact-card.active {
+    background-color: #77a8da;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* 1. The Container for all messages */
+#messages_display {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    background-color: #f0f2f5; /* Light gray background like a real chat */
+    overflow-y: auto;
+}
+
+/* 2. Base style for all bubbles */
+.message-bubble {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 75%;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* 3. SENT MESSAGES (Your messages - Blue) */
+.message-bubble.sent {
+    align-self: flex-end; /* Push to the right */
+    background-color: #007bff;
+    color: white;
+    border-radius: 18px 18px 2px 18px; /* Square corner on bottom-right */
+}
+
+/* 4. RECEIVED MESSAGES (Student messages - Gray) */
+.message-bubble.received {
+    align-self: flex-start; /* Push to the left */
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #e0e0e0;
+    border-radius: 18px 18px 18px 2px; /* Square corner on bottom-left */
+}
+
+/* 5. The Content text */
+.content {
+    display: block;
+    word-wrap: break-word;
+}
+
+/* 6. The Timestamp */
+.time {
+    display: block;
+    font-size: 0.7rem;
+    margin-top: 4px;
+    opacity: 0.8;
+    text-align: right;
+}
+
+/* Adjust time color for sent vs received */
+.sent .time {
+    color: #e0e0e0;
+}
+
+.received .time {
+    color: #888;
+}
+
+
+
+
+

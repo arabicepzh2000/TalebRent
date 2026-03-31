@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sing up</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://kit.fontawesome.com/9f1604d277.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<form id="signupForm">
+    <div id="container">
+        <div class="h1">
+            <h1>Sign-up</h1>
+        </div>
+        <div class="name">
+            <label for="">full name*</label><br>
+            <input type="text" name="" id="fullname"placeholder=""required>
+            <i class="fa-solid fa-user-graduate"></i>
+        </div>
+        <div class="email">
+            <label for="email">E-mail*</label ><br>
+            <input type="email" name="email" id="email" placeholder="student@gmail.com" required>
+            <i class="fa-solid fa-at" style="color: rgb(255, 255, 255);"></i>
+        </div>
+        <div class="stu">
+            <label for="">student ID*</label><br>
+            <input type="number" name="" id="studentId"pattern="[0-9]{4}/[0-9]{8}" placeholder="bac year matricule"> 
+            <i class="fa-regular fa-address-card" style="color: rgb(255, 255, 255);"></i>
+        </div>
+            
+       <div class="password">
+        <label for="password">password*</label><br>
+        <input type="password" name="password" id="password" required>
+        <i class="fa-solid fa-key" style="color: rgb(255, 255, 255);"></i>
+       </div>
+       <div class="conf">
+        <label for="">condirm password*</label><br>
+        <input type="password" name="" id="confirmPassword"required>
+        <i class="fa-solid fa-check" style="color: rgb(255, 255, 255);"></i>
+       </div>
+       <div class="accept">
+        <input type="checkbox" id="terms" required> <p>I accept the Terms of Use and <a href="">Privacy Policy</a></p>
+       </div>
+       <div class="login">
+        <a href="login.html">I already have an account ></a>
+       </div>
+        
+        <div class="btn">
+            <button type="submit" id="submit" href="home_page.html">Sign up</button>
+        </div>
+        
+        
+    </div>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="signup.js"></script>
+</body>
+</html>

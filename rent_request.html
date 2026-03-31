@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rent_request</title>
+    <link rel="stylesheet" href="rent_request.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="h1">
+                <h1 onclick="window.location.reload()" style="cursor:pointer">TalebRent</h1>
+            </div>
+    
+
+            <div class="buttons">
+                <button onclick="window.location.href='my_items.html'" class="my_items">my items</button>
+                <button onclick="window.location.href='list_item.html'"class="list_item"><i class="fa-solid fa-cart-plus"></i> listitem</button>
+                <button class="aboutus">about us</button>
+            </div>
+        </div>
+    </header>
+    <div class="back_btn">
+        <button onclick="window.history.back()">Back</button>
+    </div>
+    <form action="" id="rent_request_form" class="rent_request_container">
+        <h1 class="rent">Rent request</h1>
+      <div class="from_date">
+        <h1 id="product_name"></h1>
+        <h3 id="renter_name"></h3>
+        <label for="payment">payment method:</label>
+        <select name=""class="payment" id="payment">
+          <option value="hand_to_hand">hand_to_hand</option>
+          <option value="online">online</option>
+          <option value="any">any</option>
+        </select><br>
+        <div id="card_selection_container" style="display: none;"></div>
+        <label for="pay_card">payment_card
+        </label>
+        <select class="pay_card" id="pay_card">
+          <option value="ccp">CCP</option>
+          <option value="paypal">Paypal</option>
+          <option value="visa_card">Visa_card</option>
+          <option value="master_card">Master_card</option>
+          <option value="redot_pay">Redot_pay</option>
+        </select><br>
+        <label for="">start_date:</label>
+        <input id="start_date" type="date">
+      </div>
+      <div class="to_date">
+        <label for="">end_date:</label>
+        <input id="end_date" type="date">
+      </div>
+      <div class="message">
+        <textarea id="request_message" placeholder="message..."></textarea>
+      </div>
+      <div class="price_txt">
+        <h1>price</h1>
+        <h1 id="price"></h1>
+        <h1 id="aday"></h1>
+        <h1 id="total_price"></h1>
+      </div>
+      <div class="submit_btn">
+         
+        <button type="submit">submit</button>
+      </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script type="module" src="rent_request.js"></script>
+</body>
+</html>

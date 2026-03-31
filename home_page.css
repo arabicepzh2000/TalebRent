@@ -1,0 +1,303 @@
+body{
+    background-color: rgb(230, 240, 255);
+}
+.container{
+    border-radius: 30px;
+    margin: 1px;
+    height: 150px;
+    background-color: rgb(37, 99, 235);
+}
+.h1{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.search{
+margin-left:35%;
+}
+.search input{
+    background-color: rgba(210, 210, 210, 0.934);
+    border-radius: 30px;
+    border: 0px;
+    margin-top: 45px;
+    width: 450px;
+    height: 40px;
+    text-align: center;
+}
+.buttons{
+    justify-content: center;
+align-items: center;
+    background-color: rgb(37, 99, 235);
+    display: flex;
+    margin-top: 30px;
+}
+.my_items{
+    height: 50px;
+    width: 150px;
+    font-size: 28px;
+    text-align: right;
+    background-color: white;
+    border: 0px;
+    margin: 2.5px;
+    box-shadow: 5px 0px 10px;
+}
+.listitem i{
+    display: flex;
+    float: left;
+}
+.list_item{
+    height: 50px;
+    width: 150px;
+    font-size: 28px;
+    text-align: right;
+    background-color: white;
+    border: 0px;
+    margin: 2.5px;
+    box-shadow: 5px 0px 10px;
+}
+.listitem i{
+    display: flex;
+    float: left;
+}
+.categories span{
+    display: flex;
+    float: left;
+}
+.categories span{
+    display: flex;
+    float: left;
+}
+.categories select{
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    text-align: right;
+    border: 0px;
+    margin: 2.5px;
+    box-shadow: 5px 0px 10px;
+}
+.listitem i{
+    display: flex;
+    float: left;
+}
+.listitem i{
+    display: flex;
+    float: left;
+}
+.aboutus{
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    text-align: center;
+    border: 0px;
+    margin: 2.5px;
+    box-shadow: 5px 0px 10px;
+}
+.notification{
+    background-color: #ffffff;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    border: 0px;
+    cursor: pointer;
+    margin: 2.5px;
+    box-shadow: 5px 0px 10px;
+    transition: 0.5s;
+}
+.notification:hover{
+    width: 150px;
+}
+.notification select{
+    font-size: 1.5rem;
+    width: 20px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.notification select:hover{
+ width: 100px;
+}
+.notification i{
+    float: left;
+    margin-top: 10px;
+    font-size: 30px;
+}
+.listitem i{
+    display: flex;
+    float: left;
+}
+.filter{
+    display: flex;
+    margin-top: 30px;
+}
+.wilaya select{
+    margin: 10px;
+height: 50px;
+width: 150px;
+background-color: white;
+font-size: 20px;
+text-align: center;
+border: 3px solid;
+border-radius: 30px;
+border-color: rgb(37, 99, 235);
+}
+.cost select{
+    margin: 10px;
+height: 50px;
+width: 150px;
+background-color: white;
+font-size: 20px;
+text-align: center;
+border: 3px solid;
+border-radius: 30px;
+border-color: rgb(37, 99, 235);
+}
+.available select{
+    margin: 10px;
+height: 50px;
+width: 150px;
+background-color: white;
+font-size: 20px;
+text-align: center;
+border: 3px solid;
+border-radius: 30px;
+border-color: rgb(37, 99, 235);
+}
+.academic select{
+    margin: 10px;
+height: 50px;
+width: 150px;
+background-color: white;
+font-size: 20px;
+text-align: center;
+border: 3px solid;
+border-radius: 30px;
+border-color: rgb(37, 99, 235);
+}
+
+#listingsContainer {
+    display: grid;
+    /* This automatically creates as many columns as will fit (min 250px each) */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px; /* Space between cards */
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+/* --- The "Casio" Product Card Design --- */
+.product_card {
+    background: #ffffff;
+    /* Bold blue border from your screenshot */
+    border: 2px solid #007bff; 
+    /* High border-radius for that modern "bubble" look */
+    border-radius: 30px; 
+    padding: 15px;
+    width: 250px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    box-shadow: 5px 5px 2px rgb(50, 137, 207);
+}
+
+/* Hover effect to make it interactive */
+.product_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 10px rgba(0, 123, 255, 0.15);
+}
+
+/* Image Wrapper: ensures all images fit nicely without stretching */
+.card_img_wrapper {
+    width: 250px;
+    height: 150px;
+    background-color: #00000000;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_img_wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 30px;
+}
+
+/* Title and "Used/New" Badge */
+.title_row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.p-title {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    font-weight: 1000;
+    color: #000000;
+    margin: 0;
+    text-transform: lowercase; /* Matches your screenshot style */
+}
+
+.p-status {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #007bff;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 1000;
+    font-weight: bold;
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+    margin-top: 5%;
+}
+
+/* Location and Availability */
+.p-location {
+    font-size: 1rem;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-weight: bold;
+    margin-top: 1px;
+    background-color: #e5fff000;
+    color: #000000;
+}
+.p-avail-text{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Footer: Price and Rating */
+.card_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+    padding-top: 10px;
+    border-top: 1px solid #f1f1f1;
+}
+
+.price_text {
+    font-size: 1.1rem;
+    color: #2c3e50;
+}
+
+.p-price {
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+

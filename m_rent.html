@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rent_request message</title>
+    <link rel="stylesheet" href="m_rent.css">
+    <script src="https://kit.fontawesome.com/9f1604d277.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="h1">
+                <h1 onclick="window.location.reload()" style="cursor:pointer">TalebRent</h1>
+            </div>
+            
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="SEARCH">
+            </div>
+
+            <div class="buttons">
+                <button onclick="window.location.href='my_items.html'" class="my_items">my items</button>
+                <button onclick="window.location.href='list_item.html'"class="list_item"><i class="fa-solid fa-cart-plus" style="color: #007bff;"></i> listitem</button>
+                <button class="aboutus"><i class="fa-solid fa-circle-info" style="color: #007bff;"></i>about us</button>
+                <div class="notification"> <i class="fa-solid fa-bell" style="color: #007bff;"></i>
+                    <select name="notification" id="nav-select">
+                    <option value="notifications" >Go to...</option>
+                    <option value="m_rent.html" onclick="window.location.href='m_rent.html'">rent_request</option>
+                    <option value="m_cont.html">contracts</option>
+                    <option value="m_pay.html">payment</option>
+                </select>   </div>
+                          
+            </div>
+            
+        </div>
+    </header> 
+    <div class="title">
+        <h1>rent_request</h1>
+       </div>
+    <div id="requests_container" class="requests_list">
+<template id="request_card_template" class="request_card_template">   
+ <div class="request_card">     
+        <p class="request_text">
+            <strong class="renter_name">Loading...</strong> wants to rent your 
+            <strong class="product_name">Item</strong> 
+            from <span class="start_date">Date</span> 
+            to <span class="end_date">Date</span>.
+            <p class="payment_method" style="font-weight: bold; color: #21486e;"></p>
+            <p class="pay_card"></p>
+        </p>
+        <p class="request_message">"Message here"</p>
+        <div class="request_actions">
+            <button class="decline_btn">Decline</button>
+            <button class="message_btn">message</button>
+            
+        </div>
+    </div>  
+</template>
+    </div>
+  
+    
+ 
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <script src="m_rent.js"></script> 
+</body>
+</html>
