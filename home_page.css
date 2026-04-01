@@ -301,3 +301,74 @@ border-color: rgb(37, 99, 235);
 }
 
 
+/* --- MOBILE REFACTOR (Screens smaller than 768px) --- */
+@media (max-width: 768px) {
+    
+    /* 1. Adjust the blue header container */
+    .container {
+        height: auto; /* Let it grow with content */
+        padding-bottom: 20px;
+        border-radius: 0 0 30px 30px; /* Round only bottom for a clean look */
+    }
+
+    /* 2. Fix the Search Bar (The biggest problem area) */
+    .search {
+        margin-left: 5%; /* Remove the 35% offset */
+        margin-right: 5%;
+    }
+    
+    .search input {
+        width: 100%; /* Take up full available width */
+        margin-top: 20px;
+    }
+
+    /* 3. Make Navigation Buttons stack or wrap */
+    .buttons {
+        flex-wrap: wrap; /* Allows buttons to go to the next line */
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .my_items, .list_item, .categories select, .aboutus, .notification {
+        width: 45%; /* Show 2 buttons per row */
+        font-size: 18px; /* Shrink text slightly to fit */
+        margin: 0;
+    }
+
+    /* 4. Fix Filters (Stack them vertically) */
+    .filter {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .wilaya select, .cost select, .available select, .academic select {
+        width: 90%; /* Full width filters for easy tapping */
+        margin: 5px 0;
+    }
+
+    /* 5. Adjust the Product Grid for Phone Screens */
+    #listingsContainer {
+        grid-template-columns: 1fr; /* One large card per row */
+        justify-items: center; /* Center the cards */
+        padding: 10px;
+    }
+
+    .product_card {
+        width: 90%; /* Make card take up most of the screen width */
+        height: auto; /* Let text determine height */
+        padding-bottom: 20px;
+    }
+
+    .card_img_wrapper {
+        width: 100%; /* Responsive image container */
+    }
+
+    /* 6. Fix the "Float" issues */
+    .h1 {
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+}
