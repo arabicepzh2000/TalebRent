@@ -1,223 +1,117 @@
-body{
-    background-color: rgb(230, 240, 255);
-}
-.container{
-    border-radius: 30px;
-    margin: 1px;
-    height: 150px;
-    background-color: rgb(37, 99, 235);
-}
-.h1{
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    float: left;
-    margin-top: 10px;
-    margin-left: 20px;
-}
-.search{
-margin-left:35%;
-}
-.search input{
-    background-color: rgba(210, 210, 210, 0.934);
-    border-radius: 30px;
-    border: 0px;
-    margin-top: 45px;
-    width: 450px;
-    height: 40px;
-    text-align: center;
-}
-.buttons{
-    justify-content: center;
-align-items: center;
-    background-color: rgb(37, 99, 235);
-    display: flex;
-    margin-top: 30px;
-}
-.my_items{
-    height: 50px;
-    width: 150px;
-    font-size: 28px;
-    text-align: right;
-    background-color: white;
-    border: 0px;
-    margin: 2.5px;
-    box-shadow: 5px 0px 10px;
-}
-.listitem i{
-    display: flex;
-    float: left;
-}
-.list_item{
-    height: 50px;
-    width: 150px;
-    font-size: 28px;
-    text-align: right;
-    background-color: white;
-    border: 0px;
-    margin: 2.5px;
-    box-shadow: 5px 0px 10px;
-}
-.listitem i{
-    display: flex;
-    float: left;
-}
-.categories span{
-    display: flex;
-    float: left;
-}
-.categories span{
-    display: flex;
-    float: left;
-}
-.categories select{
-    height: 50px;
-    width: 150px;
-    font-size: 20px;
-    text-align: right;
-    border: 0px;
-    margin: 2.5px;
-    box-shadow: 5px 0px 10px;
-}
-.listitem i{
-    display: flex;
-    float: left;
-}
-.listitem i{
-    display: flex;
-    float: left;
-}
-.aboutus{
-    height: 50px;
-    width: 150px;
-    font-size: 25px;
-    text-align: center;
-    border: 0px;
-    margin: 2.5px;
-    box-shadow: 5px 0px 10px;
-}
-.notification{
-    background-color: #ffffff;
-    height: 50px;
-    width: 70px;
-    text-align: center;
-    border: 0px;
-    cursor: pointer;
-    margin: 2.5px;
-    box-shadow: 5px 0px 10px;
-    transition: 0.5s;
-}
-.notification:hover{
-    width: 150px;
-}
-.notification select{
-    font-size: 1.5rem;
-    width: 20px;
-    height: 50px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.notification select:hover{
- width: 100px;
-}
-.notification i{
-    float: left;
-    margin-top: 10px;
-    font-size: 30px;
-}
-.listitem i{
-    display: flex;
-    float: left;
-}
-.filter{
-    display: flex;
-    margin-top: 30px;
-}
-.wilaya select{
-    margin: 10px;
-height: 50px;
-width: 150px;
-background-color: white;
-font-size: 20px;
-text-align: center;
-border: 3px solid;
-border-radius: 30px;
-border-color: rgb(37, 99, 235);
-}
-.cost select{
-    margin: 10px;
-height: 50px;
-width: 150px;
-background-color: white;
-font-size: 20px;
-text-align: center;
-border: 3px solid;
-border-radius: 30px;
-border-color: rgb(37, 99, 235);
-}
-.available select{
-    margin: 10px;
-height: 50px;
-width: 150px;
-background-color: white;
-font-size: 20px;
-text-align: center;
-border: 3px solid;
-border-radius: 30px;
-border-color: rgb(37, 99, 235);
-}
-.academic select{
-    margin: 10px;
-height: 50px;
-width: 150px;
-background-color: white;
-font-size: 20px;
-text-align: center;
-border: 3px solid;
-border-radius: 30px;
-border-color: rgb(37, 99, 235);
+/* 1. Global Reset & Box Model */
+* {
+    box-sizing: border-box; /* Crucial: includes padding in the % width */
+    margin: 0;
+    padding: 0;
 }
 
-#listingsContainer {
-    display: grid;
-    /* This automatically creates as many columns as will fit (min 250px each) */
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 10px; /* Space between cards */
+body {
+    background-color: rgb(230, 240, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden; /* Prevents accidental side-scrolling */
+}
+
+/* 2. Header & Search Area */
+.container {
+    background-color: rgb(37, 99, 235);
+    border-radius: 0 0 30px 30px; 
     padding: 20px;
     width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-/* --- The "Casio" Product Card Design --- */
+
+.h1 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.search {
+    width: 90%;
+    max-width: 600px; /* Limits width on large PC screens */
+    display: flex;
+    justify-content: center;
+}
+
+.search input {
+    background-color: rgba(210, 210, 210, 0.93);
+    border-radius: 30px;
+    border: none;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* 3. Navigation Buttons */
+.buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 10px;
+}
+
+.buttons button, .categories select, .aboutus {
+    height: 50px;
+    width: 180px; /* Default width for PC */
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* 4. Filters Section */
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.filter select {
+    height: 45px;
+    width: 160px;
+    border: 2px solid rgb(37, 99, 235);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* 5. Product Grid (Fluid) */
+#listingsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .product_card {
     background: #ffffff;
-    /* Bold blue border from your screenshot */
     border: 2px solid #007bff; 
-    /* High border-radius for that modern "bubble" look */
     border-radius: 30px; 
     padding: 15px;
-    width: 250px;
-    height: 340px;
+    width: 100%; /* Fills the grid cell */
     display: flex;
     flex-direction: column;
     gap: 10px;
-    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-    box-shadow: 5px 5px 2px rgb(50, 137, 207);
+    box-shadow: 5px 5px 0px rgb(50, 137, 207);
 }
 
-/* Hover effect to make it interactive */
-.product_card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 10px rgba(0, 123, 255, 0.15);
-}
-
-/* Image Wrapper: ensures all images fit nicely without stretching */
 .card_img_wrapper {
-    width: 250px;
-    height: 150px;
-    background-color: #00000000;
-    border-radius: 30px;
+    width: 100%;
+    height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,148 +121,24 @@ border-color: rgb(37, 99, 235);
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    border-radius: 30px;
 }
 
-/* Title and "Used/New" Badge */
-.title_row {
-    display: flex;
-    align-items: flex-start;
-}
-
-.p-title {
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #ffffff;
-    font-weight: 1000;
-    color: #000000;
-    margin: 0;
-    text-transform: lowercase; /* Matches your screenshot style */
-}
-
-.p-status {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #007bff;
-    width: 50px;
-    height: 20px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    color: #ffffff;
-    border-radius: 30px;
-    font-size: 1rem;
-    font-weight: 1000;
-    font-weight: bold;
-    margin-left: 10px;
-    letter-spacing: 0.5px;
-    margin-top: 5%;
-}
-
-/* Location and Availability */
-.p-location {
-    font-size: 1rem;
-    font-family:Arial, Helvetica, sans-serif ;
-    font-weight: bold;
-    margin-top: 1px;
-    background-color: #e5fff000;
-    color: #000000;
-}
-.p-avail-text{
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/* Footer: Price and Rating */
-.card_footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 4px;
-    padding-top: 10px;
-    border-top: 1px solid #f1f1f1;
-}
-
-.price_text {
-    font-size: 1.1rem;
-    color: #2c3e50;
-}
-
-.p-price {
-    font-size: 1.4rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/* --- MOBILE REFACTOR (Screens smaller than 768px) --- */
+/* 6. MOBILE SPECIFIC OVERRIDES */
 @media (max-width: 768px) {
-    
-    /* 1. Adjust the blue header container */
-    .container {
-        height: auto; /* Let it grow with content */
-        padding-bottom: 20px;
-        border-radius: 0 0 30px 30px; /* Round only bottom for a clean look */
+    .buttons button, .categories select, .aboutus {
+        width: 45%; /* Two buttons side-by-side on phone */
+        font-size: 0.9rem;
     }
 
-    /* 2. Fix the Search Bar (The biggest problem area) */
-    .search {
-        margin-left: 5%; /* Remove the 35% offset */
-        margin-right: 5%;
+    .filter select {
+        width: 90%; /* Filters stack on phone */
     }
-    
+
+    .p-title {
+        font-size: 1.5rem;
+    }
+
     .search input {
-        width: 100%; /* Take up full available width */
-        margin-top: 20px;
-    }
-
-    /* 3. Make Navigation Buttons stack or wrap */
-    .buttons {
-        flex-wrap: wrap; /* Allows buttons to go to the next line */
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .my_items, .list_item, .categories select, .aboutus, .notification {
-        width: 45%; /* Show 2 buttons per row */
-        font-size: 18px; /* Shrink text slightly to fit */
-        margin: 0;
-    }
-
-    /* 4. Fix Filters (Stack them vertically) */
-    .filter {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 15px;
-    }
-
-    .wilaya select, .cost select, .available select, .academic select {
-        width: 90%; /* Full width filters for easy tapping */
-        margin: 5px 0;
-    }
-
-    /* 5. Adjust the Product Grid for Phone Screens */
-    #listingsContainer {
-        grid-template-columns: 1fr; /* One large card per row */
-        justify-items: center; /* Center the cards */
-        padding: 10px;
-    }
-
-    .product_card {
-        width: 90%; /* Make card take up most of the screen width */
-        height: auto; /* Let text determine height */
-        padding-bottom: 20px;
-    }
-
-    .card_img_wrapper {
-        width: 100%; /* Responsive image container */
-    }
-
-    /* 6. Fix the "Float" issues */
-    .h1 {
-        float: none;
-        text-align: center;
-        width: 100%;
-        margin-left: 0;
+        margin-top: 0; /* Align better on mobile */
     }
 }
